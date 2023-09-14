@@ -1,0 +1,17 @@
+@import url('https://fonts.cdnfonts.com/css/breaking-bad');
+
+.Title {
+  text-align: center;
+  color: #59705d;
+  font-family: cursive;
+  font-size: 45px;
+}
+.TitleBar {
+  text-align: center;
+  color: #59705d;
+  font-family: 'BREAKING BAD', sans-serif;
+}
+
+.Footer {
+  margin-top: 10px;
+}

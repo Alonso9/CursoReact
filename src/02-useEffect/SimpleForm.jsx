@@ -20,15 +20,15 @@ export const SimpleForm = () => {
 
   // Sirve para ejecutar efectos secundarios, se llama cada vez que el form se esta cambiando o dibujando en pantalla
   useEffect(() => {
-    console.log('useEffec');
+    // console.log('useEffec');
   }, []); // Como le pasamos una lista de dependencias vacias, solo se ejecuta una sola vez y ya
 
   useEffect(() => {
-    console.log('formState changed!');
+    // console.log('formState changed!');
   }, [formState]); // Para este caso solo llamamos este useEffec cuando el formState cambie
 
   useEffect(() => {
-    console.log('email changed!');
+    // console.log('email changed!');
   }, [email]); // Para este caso solo llamamos este useEffec cuando el email cambie
 
   return (
@@ -43,7 +43,7 @@ export const SimpleForm = () => {
         value={userName}
         onChange={onInputChange}
       />
-      <Message />
+      {/* <Message /> */}
       <input
         type="text"
         className="form-control mt-2"
@@ -52,6 +52,8 @@ export const SimpleForm = () => {
         value={email}
         onChange={onInputChange}
       />
+
+      {userName === 'Alonsoxd' && <Message />}
     </>
   );
 };
