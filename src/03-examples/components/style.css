@@ -1,0 +1,13 @@
+img {
+  width: 10%;
+  /* height: 100px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(104, 102, 102);
+  border-radius: 55px;
+}
+
+blockquote {
+  display: flex;
+}

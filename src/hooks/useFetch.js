@@ -14,12 +14,23 @@ export const useFetch = (url) => {
     const resp = await fetch(url);
     const data = await resp.json();
 
+    // setTimeout(
+    //   function () {
+    //     //Start the timer
+    //     setState({
+    //       data,
+    //       isLoading: false,
+    //       haserror: null,
+    //     });
+    //   }.bind(this),
+    //   1000
+    // );
     setState({
       data,
       isLoading: false,
       haserror: null,
     });
-    console.log(data);
+    // console.log(data);
   };
   // UseEffect que cada vez que el url cambie, se dispare la peticion
   useEffect(() => {

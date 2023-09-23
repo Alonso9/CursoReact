@@ -40,6 +40,13 @@ button {
   cursor: pointer;
 }
 
+.container {
+  margin: auto;
+  width: 95%;
+  border: 1px solid #2d6036;
+  padding: 10px;
+}
+
 .button:active,
 .button:hover {
   outline: 0;

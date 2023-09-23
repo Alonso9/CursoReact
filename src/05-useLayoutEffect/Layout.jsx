@@ -1,12 +1,12 @@
 import React from 'react';
-import { LoadingComponent } from './components/isLoading';
-import { QuoteComponent } from './components/QuoteComponent';
+import { LoadingComponent } from '../03-examples/components/isLoading';
+import { QuoteComponent } from '../03-examples/components/QuoteComponent';
 // import { useFetch } from '../hooks/useFetch';
 // import { useCounter } from '../hooks/useCounter';
 import { useFetch, useCounter } from '../hooks';
-import './css/style.css';
+import '../03-examples/css/style.css';
 
-export const MultiplecustomHooks = () => {
+export const Layout = () => {
   const { increment, counter } = useCounter(1);
   const url = 'https://api.breakingbadquotes.xyz/v1/quotes/' + counter;
   const { data, isLoading, haserror } = useFetch(url);
