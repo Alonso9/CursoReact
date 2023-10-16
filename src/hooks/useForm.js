@@ -5,6 +5,7 @@ export const useForm = (initialForm = {}) => {
   const [formState, setFormState] = useState(initialForm);
 
   const onInputChange = ({ target }) => {
+    console.log('Entro');
     const { name, value } = target;
     setFormState({
       ...formState,
@@ -14,7 +15,7 @@ export const useForm = (initialForm = {}) => {
 
   const onResetForm = () => {
     setFormState(initialForm);
-    console.log('Reset');
+    // console.log('Reset');
   };
   return {
     ...formState, // Paso para mndar el formState destrcturado y evitar volver a destructurar en el componente

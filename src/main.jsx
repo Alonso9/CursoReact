@@ -10,14 +10,17 @@ import { MultiplecustomHooks } from './03-examples/MultiplecustomHooks';
 import { FocusScreen } from './04-useRef/FocusScreen';
 import { Layout } from './05-useLayoutEffect/Layout';
 import { Memorize } from './06-memos/Memorize';
+import { TodoApp } from './08-UseReducer/TodoApp';
+// import './08-UseReducer/intro-reducer';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
   // <SimpleForm />
   // <FormWithCustomHook />
-  // </React.StrictMode>
-  <MultiplecustomHooks />
+  // <MultiplecustomHooks />
   // <FocusScreen />
   // <Layout />
   // <Memorize />
+  <TodoApp />
+  // </React.StrictMode>
 );
