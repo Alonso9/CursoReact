@@ -13,7 +13,7 @@ export const FormComponent = ({ onNewTodo }) => {
 
   const onFormSubmit = (event) => {
     event.preventDefault();
-    console.log(description);
+    // console.log(description);
     if (description.length <= 1) return;
 
     const newTodo = {
